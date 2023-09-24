@@ -1,0 +1,188 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+  
+html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', sans-serif;
+  }
+  
+  footer {
+    margin-top: auto;
+    padding: 1rem 0; 
+  }
+
+
+.navbar-nav a {
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px 20px; 
+    
+  }
+
+  .navbar-nav a:hover {
+    color: #333; 
+    background-color: #fff; 
+    border-radius: 5px;
+  }
+  
+ 
+  .navbar-nav a.logout-button {
+    border: none; 
+    color: #fff; 
+  }
+  
+  
+  .navbar-nav a.profile-link {
+    border: none; 
+    color: #fff; 
+  }
+  
+  
+ 
+
+h1 {
+    color: black;
+}
+
+.index-image {
+    max-width: 100%; 
+    max-height: 400px; 
+    display: block; 
+    margin: 0 auto; 
+  }
+
+.bg-whitesmoke {
+    background-color: whitesmoke;
+  }
+
+.navbar {
+    background-color: gray;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.search-btn-margin {
+    margin-left: 10px;
+  }
+
+
+.listing-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.listing-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.listing-description {
+    margin-top: 10px;
+}
+
+.listing-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.listing-meta {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+.listing-card .listing-image {
+    max-width: 90%; 
+    width: auto; 
+    height: auto; 
+}
+
+.profile-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+    text-align: center;
+  }
+  
+  .profile-card img {
+    border-radius: 50%;
+    max-width: 100%;
+    border: 3px solid #fff;
+  }
+  
+  .profile-card h5 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+  
+  .profile-card p {
+    font-size: 1.1rem;
+    margin: 20px 0;
+  }
+  
+  #avatar-url-input {
+    margin-bottom: 10px;
+    
+    
+    
+  }
+  
+  #update-avatar-btn {
+    font-size: 1rem;
+  }
+
+  .bid-input {
+    max-width: 250px; 
+  }
+  
+  .signup-para {
+    font-size: 0.9rem;
+    margin-top: 2px;
+  }
+  
+
+@media (max-width: 767px) {
+    .profile-card {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .profile-card img {
+      max-width: 100px;
+    }
+  
+    .profile-card h5 {
+      font-size: 1.2rem;
+    }
+  
+    .profile-card p {
+      font-size: 1rem;
+    }
+  }
+  
+
+
+@media (min-width: 768px) {
+    .listing-card {
+        max-width: 100%; 
+    }
+}
+

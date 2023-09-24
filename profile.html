@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Bidders House</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Log In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="profile-card">
+        <div class="card-body">
+          <div class="mb-3 text-center">
+            <img
+              id="profile-avatar"
+              src=""
+              alt="User Avatar"
+              class="img-fluid rounded-circle"
+              width="100"
+              height="100"
+            />
+          </div>
+
+          <h5 class="card-title text-center">User Profile</h5>
+          <p class="card-text">
+            <strong>Username:</strong> <span id="profile-name"></span>
+          </p>
+          <p class="card-text">
+            <strong>Email:</strong> <span id="profile-email"></span>
+          </p>
+          <p class="card-text">
+            <strong>Available Credits:</strong>
+            <span id="profile-credits"></span>
+          </p>
+          <p class="card-text">
+            <strong>Wins:</strong> <span id="profile-wins"></span>
+          </p>
+          <p class="card-text">
+            <strong>Listings:</strong> <span id="profile-listings"></span>
+          </p>
+
+          <div class="text-center">
+            <input
+              type="text"
+              id="avatar-url-input"
+              class="form-control mb-2"
+              placeholder="Enter Avatar URL"
+            />
+            <button class="btn btn-primary mt-2" id="update-avatar-btn">
+              Update Avatar
+            </button>
+            <p id="avatar-error-message" class="text-danger"></p>
+          </div>
+          <div class="mb-4">
+            <h5 class="card-title text-center">Create a Listing</h5>
+            <form id="listing-form">
+              <div class="form-group mt-3">
+                <label for="title">Title:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  name="title"
+                  placeholder="Enter a title"
+                  required
+                />
+              </div>
+              <div class="form-group mt-3">
+                <label for="description">Description:</label>
+                <textarea
+                  class="form-control"
+                  id="description"
+                  name="description"
+                  rows="4"
+                  placeholder="Enter a description"
+                ></textarea>
+              </div>
+
+              <div class="form-group mt-3">
+                <label for="media">Media URL:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="media"
+                  name="media"
+                  placeholder="Enter image URL"
+                />
+              </div>
+              <div class="form-group mt-3">
+                <label for="endsAt">Deadline Date:</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="endsAt"
+                  name="endsAt"
+                  required
+                />
+              </div>
+              <p>*Please fill out all listing forms</p>
+              <button type="submit" class="btn btn-primary mt-3">
+                Create Listing
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark py-4">
+      <div class="container text-center text-white">
+        <p class="mb-0">© 2023 Bidders House. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/profile.js"></script>
+    <script type="module" src="js/avatar.js"></script>
+    <script type="module" src="js/createListing.js"></script>
+  </body>
+</html>
