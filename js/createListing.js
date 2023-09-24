@@ -18,6 +18,11 @@ function createListing(event) {
     return;
   }
 
+  if (!media) {
+    alert("Image URL is required.");
+    return;
+  }
+
   const listingData = {
     title,
     description,
