@@ -118,7 +118,7 @@ function searchListings() {
 
   listingCards.forEach((listingCard) => {
     const titleElement = listingCard.querySelector("h2");
-    const descriptionElement = listingCard.querySelector("h5");
+    const descriptionElement = listingCard.querySelector("h6");
 
     const title = titleElement.textContent.toLowerCase();
     const description = descriptionElement.textContent.toLowerCase();
