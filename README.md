@@ -29,7 +29,7 @@ npm install
 
 ### Running
 
-npm run dev
+npm run dev, or open with the live server extension for VS code
 
 
 
