@@ -1,12 +1,38 @@
 # Semester Project 2
 
+Semester Assignment with focus on bootstrap and sass
+
 ## Description
 
-Assignment for creating an auction site. 
+This is an auction site where users can register, log in and view, bid and list items on the page.
+
+## Built With
+
+- HTML
+- SCSS
+- Javascript
+- Bootstrap
 
 ## Getting Started
 
-Make sure to have NodeJS and NPM installed.
-to simply run the project locally use -npm run build
+### Installing
 
-If you want to make changes to the project make sure you have Bootstrap, SASS and live-server installed.
+Make sure to have Node.js and npm installed.
+
+Clone the repo
+
+Install the dependencies:
+
+npm install
+
+
+
+### Running
+
+npm run dev
+
+
+
+
+## Live Site
+https://lighthearted-malabi-a64a8a.netlify.app/
